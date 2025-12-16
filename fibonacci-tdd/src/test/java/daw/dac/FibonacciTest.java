@@ -11,4 +11,9 @@ class FibonacciTest {
     void fibonacciOfZeroIsZero() {
         assertEquals(0, fibonacci.calculate(0));
     }
+
+    @Test
+    void fibonacciOfOneIsOne() {
+        assertEquals(1, fibonacci.calculate(1));
+    }
 }
