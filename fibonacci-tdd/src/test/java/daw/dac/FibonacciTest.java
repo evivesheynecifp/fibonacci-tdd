@@ -18,7 +18,12 @@ class FibonacciTest {
     }
 
     @Test
-    void fibonacciOfTwoIsTwo() {
+    void fibonacciOfTwoIsOne() {
         assertEquals(1, fibonacci.calculate(2));
+    }
+
+    @Test
+    void fibonacciOfThreeIsTwo() {
+        assertEquals(2, fibonacci.calculate(3));
     }
 }
