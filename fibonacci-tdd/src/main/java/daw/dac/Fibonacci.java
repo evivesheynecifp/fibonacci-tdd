@@ -12,6 +12,8 @@ public class Fibonacci {
                 2;
             case 4 ->
                 3;
+            case 5 ->
+                5;
             default ->
                 0;
         };
