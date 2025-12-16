@@ -10,6 +10,8 @@ public class Fibonacci {
                 1;
             case 3 ->
                 2;
+            case 4 ->
+                3;
             default ->
                 0;
         };
