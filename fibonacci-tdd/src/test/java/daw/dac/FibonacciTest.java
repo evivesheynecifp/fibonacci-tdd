@@ -31,4 +31,9 @@ class FibonacciTest {
     void fibonacciOfFourIsThree() {
         assertEquals(3, fibonacci.calculate(4));
     }
+
+    @Test
+    void fibonacciOfFiveIsFive() {
+        assertEquals(5, fibonacci.calculate(5));
+    }
 }
