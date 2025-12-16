@@ -16,4 +16,9 @@ class FibonacciTest {
     void fibonacciOfOneIsOne() {
         assertEquals(1, fibonacci.calculate(1));
     }
+
+    @Test
+    void fibonacciOfTwoIsTwo() {
+        assertEquals(1, fibonacci.calculate(2));
+    }
 }
