@@ -39,11 +39,11 @@ class FibonacciTest {
 
     @Test
     void fibonacciOfSixIsEight() {
-        assertEquals(6, fibonacci.calculate(8));
+        assertEquals(8, fibonacci.calculate(6));
     }
 
     @Test
     void fibonacciOfSevenIsThirteen() {
-        assertEquals(7, fibonacci.calculate(13));
+        assertEquals(13, fibonacci.calculate(7));
     }
 }
