@@ -3,6 +3,10 @@ package daw.dac;
 public class Fibonacci {
 
     public int calculate(int n) {
+        if (n < 0) {
+            throw new IllegalArgumentException("El nombre ha de ser positiu!");
+        }
+
         if (n <= 1) {
             return n;
         }
