@@ -46,4 +46,9 @@ class FibonacciTest {
     void fibonacciOfSevenIsThirteen() {
         assertEquals(13, fibonacci.calculate(7));
     }
+
+    @Test
+    void fibonacciOfEightIsTwentyOne() {
+        assertEquals(21, fibonacci.calculate(8));
+    }
 }
