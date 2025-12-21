@@ -3,25 +3,19 @@ package daw.dac;
 public class Fibonacci {
 
     public int calculate(int n) {
-        return switch (n) {
-            case 1 ->
-                1;
-            case 2 ->
-                1;
-            case 3 ->
-                2;
-            case 4 ->
-                3;
-            case 5 ->
-                5;
-            case 6 ->
-                8;
-            case 7 ->
-                13;
-            case 8 ->
-                21;
-            default ->
-                0;
-        };
+        if (n <= 1) {
+            return n;
+        }
+
+        int previous = 0;
+        int current = 1;
+
+        for (int i = 2; i <= n; i++) {
+            int next = previous + current;
+            previous = current;
+            current = next;
+        }
+
+        return current;
     }
 }
