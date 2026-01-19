@@ -27,8 +27,7 @@ jobs:
           distribution: "temurin"
           cache: maven
       - name: Test with Maven
-        run: mvn test
-        working-directory: ./fibonacci-tdd
+        run: mvn -pl fibonacci-tdd test
 
       # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
       - name: Update dependency graph
